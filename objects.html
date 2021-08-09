@@ -9,9 +9,13 @@
 <body>
     <script>
         let tv = {
-            size:40,Brand:"LCD"
-        }
-        console.log(tv.size);
+            size:40,Brand:"LCD",
+            fullname : function(){
+                return this.Brand+'is good of size'+this.size;
+            }
+
+        };
+        console.log(tv.fullname());
     </script>
 </body>
 </html>
